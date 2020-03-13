@@ -1,6 +1,7 @@
 <HTML Lang="es">
 <head>
-    <title>Index</title>
+    <title>Encuesta de satisfacción</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
 <body>
