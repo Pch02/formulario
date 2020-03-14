@@ -1,7 +1,7 @@
 <HTML Lang="es">
 <head>
     <title>Encuesta de satisfacción</title>
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 </head>
 
 <body>
@@ -14,7 +14,7 @@
 </nav>
 
 <footer>
-    <img src="logouca.png" boder="1" width="100" height="100">
+    <img src="images/logouca.png" boder="1" width="100" height="100">
 </footer>
 <?php
 ?>
