@@ -10,7 +10,7 @@ header {
 }
 
 footer{
-    position: absolute;
-    bottom: 30px;
+    position: center;
+    bottom: 50px;
     left: 70px;
 }
