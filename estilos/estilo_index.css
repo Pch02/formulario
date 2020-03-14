@@ -9,20 +9,6 @@ header {
     font-size: 200%;
 }
 
-body{
-    background-color: palegoldenrod;
-}
-nav {
-    display: block;
-    color: orange;
-    text-align: center;
-}
-a{ /*estilo del texto de cada boton*/
-    list-style: none;
-    text-decoration: none;
-    font-size: large;
-}
-
 footer{
     position: absolute;
     bottom: 30px;
