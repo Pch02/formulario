@@ -14,15 +14,9 @@
 </nav>
 
 <footer>
-    <div>
-        Formulario realizado por:
-        <li>Pablo Cumbreras Hernández</li>
-        <li>Pedro Campoy Barrera</li>
-    </div>
-    <img src="logouca.png">
+    <img src="logouca.png" boder="1" width="100" height="100">
 </footer>
 <?php
-
 ?>
 </body>
 </HTML>

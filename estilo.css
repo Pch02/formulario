@@ -8,3 +8,31 @@ header {
     text-align: center;
     font-size: 200%;
 }
+
+body{
+    background-color: palegoldenrod;
+}
+nav {
+    display: block;
+    color: orange;
+    text-align: center;
+}
+a{ /*estilo del texto de cada boton*/
+    list-style: none;
+    text-decoration: none;
+    font-size: large;
+}
+
+a li{ /*estilo de cada elemento de li (lista)*/
+    width: 50%; /*tamaño*/
+    border-radius: 10px; /*bordes del boton redondeados*/
+    border: 5px;
+    background-color: azure; /*color de fondo de cada boton*/
+    margin: 1em auto;
+}
+
+footer{
+    position: absolute;
+    bottom: 30px;
+    left: 70px;
+}
