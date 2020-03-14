@@ -6,10 +6,11 @@
 
 <body>
 <header>Encuesta de satisfacción del profesorado</header>
+
 <nav>
     <ul>
-        <a href="nueva_encuesta.php"><li>Nueva encuesta</li></a>
-        <a href="admin.php"><li>Consultar resultados</li></a>
+        <a href="nueva_encuesta.php"><li><button type="button" name="myButton" formtarget="_self">Nueva encuesta</button></li></a>
+        <a href="admin.php"><li><button type="button" name="myButton" formtarget="_self">Consultar resultados</button></li></a>
     </ul>
 </nav>
 
