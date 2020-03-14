@@ -1,3 +1,10 @@
-body{
-    background-color: #ff0000;
+{   /*establecer margenes y relleno de los lados de un elemento*/
+    margin: 0;
+    padding: 0
+}
+
+header {
+    color: aquamarine;
+    text-align: center;
+    font-size: 200%;
 }
