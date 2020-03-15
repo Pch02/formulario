@@ -6,9 +6,22 @@
 header {
     color: WindowText;
     text-align: center;
-    font-size: 200%;
+    font-size: 170%;
 }
 
+body{
+    background-color: aliceblue;
+    font-size: x-large;
+}
+
+a{
+    list-style: none;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
 footer{
     position: center;
     bottom: 50px;
