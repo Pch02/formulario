@@ -22,8 +22,9 @@ button {
     margin: 0 auto;
     display: block;
 }
+
 footer{
     position: center;
     bottom: 50px;
-    left: 70px;
+    left: 80px;
 }

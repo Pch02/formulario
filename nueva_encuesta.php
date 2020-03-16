@@ -67,7 +67,7 @@
         <input type="radio" name="vecesex" value="4">más de 3
 
         <br>La asignatura me interesa
-        <input type="radio" name="asigint" value="1">Nada
+        <input type="radio" name="" value="1">Nada
         <input type="radio" name="asigint" value="2">Algo
         <input type="radio" name="asigint" value="3">Bastante
         <input type="radio" name="asigint" value="4">Mucho
@@ -96,7 +96,6 @@
         <input type="radio" name="asigint" value="3">Bastante
         <input type="radio" name="asigint" value="4">Mucho
 </nav>
-
         <br>Código de profesor/a
         <input type="number" name="cod1" min="0" max="9">
         <input type="number" name="cod2" min="0" max="9">
@@ -104,14 +103,14 @@
         <input type="number" name="cod4" min="0" max="9">
 
     <h1>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
-    Tu colaboración es necesaria y consiste en señalar en la escala de respuesta
+    Tu colaboración es necesaria y consiste en señalar en la escala de respuesta tu grado de acuerdo con cada una de las afirmaciones (1 es totalmente en desacuerdo y
+    5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
     </h1>
 
 
 
     </form>
 <?php
-
 ?>
 </body>
 </html>
