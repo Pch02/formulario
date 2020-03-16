@@ -97,16 +97,19 @@
         <input type="radio" name="asigint" value="4">Mucho
 </nav>
         <br>Código de profesor/a
-        <input type="number" name="cod1" min="0" max="9">
-        <input type="number" name="cod2" min="0" max="9">
-        <input type="number" name="cod3" min="0" max="9">
-        <input type="number" name="cod4" min="0" max="9">
+        <input type="number" name="c1" min="0" max="9">
+        <input type="number" name="c2" min="0" max="9">
+        <input type="number" name="c3" min="0" max="9">
+        <input type="number" name="c4" min="0" max="9">
 
     <h1>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
     Tu colaboración es necesaria y consiste en señalar en la escala de respuesta tu grado de acuerdo con cada una de las afirmaciones (1 es totalmente en desacuerdo y
     5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
     </h1>
 
+<nav>
+
+</nav>
 
 
     </form>
