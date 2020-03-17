@@ -360,7 +360,7 @@
 
 <!--APARTADO 3-->
 <nav>
-    <h2>
+    <br><h2>
         Resultados
     </h2>
         <br>22. Las actividades desarrolladas (teóricas, prácticas, de trabajo individual, en grupo,...) contribuyen a alcanzar los objetivos de la asignatura
