@@ -107,11 +107,259 @@
     5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
     </h1>
 
+<!--APARTADO 1-->
 <nav>
-
+    <h2>
+        Planificación de la enseñanza y aprendizaje
+    </h2>
+        <br>1. El/la profesor/a informa sobre los distintos aspectos de la guia docente o programa de la asignatura (objetivos, actividades, contenidos del temario, metodología, bibliografía, sistemas de evalucación,...)
+        <select name="pr1">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
 </nav>
 
+<!--APARTADO 2-->
+<nav>
+    <h2>
+        Desarrollo de la docencia
+    </h2>
+    <h3>
+        Cumplimiento de las obligaciones docentes (del encargo docente)
+    </h3>
+        <br>2. Imparte las clases en el horario fijado
+        <select name="pr2">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
 
+        <br>3. Asiste regularmente a clase
+        <select name="pr3">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr4">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+    <h3>
+        Cumplimiento de la planificación
+    </h3>
+        <br>5. Se ajusta a la planificación de la asignatura
+        <select name="pr5">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>6. Se han coordinado las actividades teóricas y prácticas previstas
+            <select name="pr6">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>7. Se ajusta a los sistemas de evaluación especificados en la guía docente/programa de la asignatura
+        <select name="pr7">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>8. La bibliografía y otras fuentes de información recomendadas en el programa son útiles para el aprendizaje de la asignatura
+        <select name="pr8">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr9">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr10">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr11">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr12">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr13">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr14">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr15">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr16">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr17">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr18">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr19">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr20">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr21">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+</nav>
+
+<!--APARTADO 3-->
+<nav>
+    <h2>
+        Resultados
+    </h2>
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr22">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+
+        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <select name="pr23">
+            <option value="0"> NS
+            <option value="1"> 1
+            <option value="2"> 2
+            <option value="3"> 3
+            <option value="4"> 4
+            <option value="5"> 5
+        </select>
+</nav>
+    <input type="submit" name="Enviar" value="Enviar">
     </form>
 <?php
 ?>
