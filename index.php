@@ -2,6 +2,7 @@
 <head>
     <title>Encuesta de satisfacción</title>
     <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
+    <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
 
 <body>

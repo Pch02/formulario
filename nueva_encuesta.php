@@ -1,6 +1,8 @@
 <html>
+<link rel="stylesheet" type="text/css" href="estilos/estilo_encuesta.css">
 <head>
     <title>Nueva encuesta</title>
+    <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
 <body>
 <header>
@@ -34,11 +36,11 @@
         <input type="radio" name="edad" value="3">24-25
         <input type="radio" name="edad" value="4">más de 25
 
-        <br>Sexo
+        <br><br>Sexo
         <input type="radio" name="sexo" value="0">Hombre
         <input type="radio" name="sexo" value="1">Mujer
 
-        <br>Curso más alto en el que estás matriculado
+        <br><br>Curso más alto en el que estás matriculado
         <input type="radio" name="cursoma" value="1">1º
         <input type="radio" name="cursoma" value="2">2º
         <input type="radio" name="cursoma" value="3">3º
@@ -46,7 +48,7 @@
         <input type="radio" name="cursoma" value="5">5º
         <input type="radio" name="cursoma" value="6">6º
 
-        <br>Curso más bajo en el que estás matriculado
+        <br><br>Curso más bajo en el que estás matriculado
         <input type="radio" name="cursomb" value="1">1º
         <input type="radio" name="cursomb" value="2">2º
         <input type="radio" name="cursomb" value="3">3º
@@ -54,58 +56,63 @@
         <input type="radio" name="cursomb" value="5">5º
         <input type="radio" name="cursomb" value="6">6º
 
-        <br>Veces que te has matriculado en esta asignatura
+        <br><br>Veces que te has matriculado en esta asignatura
         <input type="radio" name="vecesmat" value="1">1
         <input type="radio" name="vecesmat" value="2">2
         <input type="radio" name="vecesmat" value="3">3
         <input type="radio" name="vecesmat" value="4">más de 3
 
-        <br>Veces que te has examinado en esta asignatura
+        <br><br>Veces que te has examinado en esta asignatura
         <input type="radio" name="vecesex" value="1">1
         <input type="radio" name="vecesex" value="2">2
         <input type="radio" name="vecesex" value="3">3
         <input type="radio" name="vecesex" value="4">más de 3
 
-        <br>La asignatura me interesa
-        <input type="radio" name="" value="1">Nada
-        <input type="radio" name="asigint" value="2">Algo
-        <input type="radio" name="asigint" value="3">Bastante
-        <input type="radio" name="asigint" value="4">Mucho
-
-        <br>Hago uso de las tutorías
+        <br><br>La asignatura me interesa
         <input type="radio" name="asigint" value="1">Nada
         <input type="radio" name="asigint" value="2">Algo
         <input type="radio" name="asigint" value="3">Bastante
         <input type="radio" name="asigint" value="4">Mucho
 
-        <br>Dificultad de esta asignatura
-        <input type="radio" name="asigint" value="1">Baja
-        <input type="radio" name="asigint" value="2">Media
-        <input type="radio" name="asigint" value="3">Alta
-        <input type="radio" name="asigint" value="4">Muy alta
+        <br><br>Hago uso de las tutorías
+        <input type="radio" name="tut" value="1">Nada
+        <input type="radio" name="tut" value="2">Algo
+        <input type="radio" name="tut" value="3">Bastante
+        <input type="radio" name="tut" value="4">Mucho
 
-        <br>Calificación esperada
-        <input type="radio" name="asigint" value="1">Nada
-        <input type="radio" name="asigint" value="2">Algo
-        <input type="radio" name="asigint" value="3">Bastante
-        <input type="radio" name="asigint" value="4">Mucho
+        <br><br>Dificultad de esta asignatura
+        <input type="radio" name="dif" value="1">Baja
+        <input type="radio" name="dif" value="2">Media
+        <input type="radio" name="dif" value="3">Alta
+        <input type="radio" name="dif" value="4">Muy alta
 
-        <br>Asistencia clase (% de horas lectivas)
-        <input type="radio" name="asigint" value="1">Nada
-        <input type="radio" name="asigint" value="2">Algo
-        <input type="radio" name="asigint" value="3">Bastante
-        <input type="radio" name="asigint" value="4">Mucho
+        <br><br>Calificación esperada
+        <input type="radio" name="cal" value="1">Nada
+        <input type="radio" name="cal" value="2">Algo
+        <input type="radio" name="cal" value="3">Bastante
+        <input type="radio" name="cal" value="4">Mucho
+
+        <br><br>Asistencia clase (% de horas lectivas)
+        <input type="radio" name="asiclase" value="1">Nada
+        <input type="radio" name="asiclase" value="2">Algo
+        <input type="radio" name="asiclase" value="3">Bastante
+        <input type="radio" name="asiclase" value="4">Mucho
 </nav>
+        <br>
         <br>Código de profesor/a
         <input type="number" name="c1" min="0" max="9">
         <input type="number" name="c2" min="0" max="9">
         <input type="number" name="c3" min="0" max="9">
         <input type="number" name="c4" min="0" max="9">
 
+    <br><br>
     <h1>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
     Tu colaboración es necesaria y consiste en señalar en la escala de respuesta tu grado de acuerdo con cada una de las afirmaciones (1 es totalmente en desacuerdo y
     5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
     </h1>
+    <br>
+    <br>
+
 
 <!--APARTADO 1-->
 <nav>
@@ -125,12 +132,15 @@
 
 <!--APARTADO 2-->
 <nav>
+    <br>
     <h2>
         Desarrollo de la docencia
     </h2>
-    <h3>
+
+    <br><h3>
         Cumplimiento de las obligaciones docentes (del encargo docente)
     </h3>
+
         <br>2. Imparte las clases en el horario fijado
         <select name="pr2">
             <option value="0"> NS
@@ -160,9 +170,11 @@
             <option value="4"> 4
             <option value="5"> 5
         </select>
-    <h3>
+
+    <br><br><h3>
         Cumplimiento de la planificación
     </h3>
+
         <br>5. Se ajusta a la planificación de la asignatura
         <select name="pr5">
             <option value="0"> NS
@@ -203,7 +215,11 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+    <br><br><h3>
+        Metodología docente
+    </h3>
+
+        <br>9. El/la profesor/a organiza bien las actividades que se realizan en clase
         <select name="pr9">
             <option value="0"> NS
             <option value="1"> 1
@@ -213,7 +229,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>10. Utiliza recursos didácticos (pizarra, transparencias, medios audiovisuales, material de apoyo en red virtual,...) que facilitan el aprendizaje
         <select name="pr10">
             <option value="0"> NS
             <option value="1"> 1
@@ -223,7 +239,11 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+    <br><br><h3>
+        Competencias docentes desarrolladas por el/la profesor/a
+    </h3>
+
+        <br>11. Explica con claridad y resalta los contenidos importantes
         <select name="pr11">
             <option value="0"> NS
             <option value="1"> 1
@@ -233,7 +253,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>12. Se interesa por el grado de comprensión de sus explicaciones
         <select name="pr12">
             <option value="0"> NS
             <option value="1"> 1
@@ -243,7 +263,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>13. Expone ejemplos en los que se ponen en práctica los contenidos de la asignatura
         <select name="pr13">
             <option value="0"> NS
             <option value="1"> 1
@@ -253,7 +273,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>14. Explica los contenidos con seguridad
         <select name="pr14">
             <option value="0"> NS
             <option value="1"> 1
@@ -263,7 +283,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>15. Resuelve las dudas que se le plantean
         <select name="pr15">
             <option value="0"> NS
             <option value="1"> 1
@@ -273,7 +293,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>16. Fomenta un clima de trabajo y participación
         <select name="pr16">
             <option value="0"> NS
             <option value="1"> 1
@@ -283,7 +303,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>17. Propicia una comunicación fluida y espontánea
         <select name="pr17">
             <option value="0"> NS
             <option value="1"> 1
@@ -293,7 +313,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>18. Motiva a los/as estudiantes para que se interesen por la asignatura
         <select name="pr18">
             <option value="0"> NS
             <option value="1"> 1
@@ -303,7 +323,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>19. Es respetuoso/a en el trato con los/as estudiantes
         <select name="pr19">
             <option value="0"> NS
             <option value="1"> 1
@@ -313,7 +333,11 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+    <br><br><h3>
+        Sistemas de evaluación
+    </h3>
+
+        <br>20. Tengo claro lo que se me va a exigir para superar esta asignatura
         <select name="pr20">
             <option value="0"> NS
             <option value="1"> 1
@@ -323,7 +347,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>21. Los criterios y sistemas de evaluación me parecen adecuados, en el contexto de la asignatura
         <select name="pr21">
             <option value="0"> NS
             <option value="1"> 1
@@ -339,7 +363,7 @@
     <h2>
         Resultados
     </h2>
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>22. Las actividades desarrolladas (teóricas, prácticas, de trabajo individual, en grupo,...) contribuyen a alcanzar los objetivos de la asignatura
         <select name="pr22">
             <option value="0"> NS
             <option value="1"> 1
@@ -349,7 +373,7 @@
             <option value="5"> 5
         </select>
 
-        <br>4. Cumple adecuadamente su labor de tutoría (presencial o virtual)
+        <br>23. Estoy satisfecho/a con la labor docente de este/a profesor/a
         <select name="pr23">
             <option value="0"> NS
             <option value="1"> 1
@@ -359,8 +383,13 @@
             <option value="5"> 5
         </select>
 </nav>
+    <br>
+    <br>
     <input type="submit" name="Enviar" value="Enviar">
+    <br>
     </form>
+    <br>
+    <a href="index.php"><button type="button" name="myButton" formtarget="_self">Inicio</button></a>
 <?php
 ?>
 </body>

@@ -1,6 +1,6 @@
 {   /*establecer margenes y relleno de los lados de un elemento*/
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 header {
@@ -23,8 +23,7 @@ button {
     display: block;
 }
 
-img.center{ /*PRUEBA DE PULL*/
-
+img.center{
     display: block;
     margin: auto;
 }
