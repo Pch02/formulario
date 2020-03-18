@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 header {
@@ -36,7 +35,6 @@ h2{
 
 form{
     display: inline-block;
-    text-align: center;
     width: 100%;
 }
 
