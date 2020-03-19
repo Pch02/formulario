@@ -1,13 +1,13 @@
 <HTML Lang="es">
+<link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 <head>
     <title>Encuesta de satisfacción</title>
-    <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
     <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
 
-<body>
 <header>Encuesta de satisfacción del profesorado</header>
 
+<body>
 <nav>
     <ul>
         <a href="nueva_encuesta.php"><li><button type="button" name="myButton" formtarget="_self">Nueva encuesta</button></li></a>

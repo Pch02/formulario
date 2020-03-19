@@ -4,10 +4,12 @@
     <title>Nueva encuesta</title>
     <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
-<body>
+
 <header>
     Encuesta de opinión de los/as estudiantes sobre la labor docente del profesorado
 </header>
+
+<body>
 <br>
 <nav>
     <h1>Código de la asignatura</h1>
@@ -30,49 +32,49 @@
 <nav>
     <h1>Información personal y académica de los estudiantes</h1>
         <br>Edad
-        <input type="radio" name="edad" value="0">19 o menos
-        <input type="radio" name="edad" value="1">20-21
-        <input type="radio" name="edad" value="2">22-23
-        <input type="radio" name="edad" value="3">24-25
-        <input type="radio" name="edad" value="4">más de 25
+        <input type="radio" name="ed" value="0">19 o menos
+        <input type="radio" name="ed" value="1">20-21
+        <input type="radio" name="ed" value="2">22-23
+        <input type="radio" name="ed" value="3">24-25
+        <input type="radio" name="ed" value="4">más de 25
 
         <br><br>Sexo
-        <input type="radio" name="sexo" value="0">Hombre
-        <input type="radio" name="sexo" value="1">Mujer
+        <input type="radio" name="se" value="0">Hombre
+        <input type="radio" name="se" value="1">Mujer
 
         <br><br>Curso más alto en el que estás matriculado
-        <input type="radio" name="cursoma" value="1">1º
-        <input type="radio" name="cursoma" value="2">2º
-        <input type="radio" name="cursoma" value="3">3º
-        <input type="radio" name="cursoma" value="4">4º
-        <input type="radio" name="cursoma" value="5">5º
-        <input type="radio" name="cursoma" value="6">6º
+        <input type="radio" name="cma" value="1">1º
+        <input type="radio" name="cma" value="2">2º
+        <input type="radio" name="cma" value="3">3º
+        <input type="radio" name="cma" value="4">4º
+        <input type="radio" name="cma" value="5">5º
+        <input type="radio" name="cma" value="6">6º
 
         <br><br>Curso más bajo en el que estás matriculado
-        <input type="radio" name="cursomb" value="1">1º
-        <input type="radio" name="cursomb" value="2">2º
-        <input type="radio" name="cursomb" value="3">3º
-        <input type="radio" name="cursomb" value="4">4º
-        <input type="radio" name="cursomb" value="5">5º
-        <input type="radio" name="cursomb" value="6">6º
+        <input type="radio" name="cmb" value="1">1º
+        <input type="radio" name="cmb" value="2">2º
+        <input type="radio" name="cmb" value="3">3º
+        <input type="radio" name="cmb" value="4">4º
+        <input type="radio" name="cmb" value="5">5º
+        <input type="radio" name="cmb" value="6">6º
 
         <br><br>Veces que te has matriculado en esta asignatura
-        <input type="radio" name="vecesmat" value="1">1
-        <input type="radio" name="vecesmat" value="2">2
-        <input type="radio" name="vecesmat" value="3">3
-        <input type="radio" name="vecesmat" value="4">más de 3
+        <input type="radio" name="mat" value="1">1
+        <input type="radio" name="mat" value="2">2
+        <input type="radio" name="mat" value="3">3
+        <input type="radio" name="mat" value="4">más de 3
 
-        <br><br>Veces que te has examinado en esta asignatura
-        <input type="radio" name="vecesex" value="1">1
-        <input type="radio" name="vecesex" value="2">2
-        <input type="radio" name="vecesex" value="3">3
-        <input type="radio" name="vecesex" value="4">más de 3
+        <br><br>Veces que te has matinado en esta asignatura
+        <input type="radio" name="ex" value="1">1
+        <input type="radio" name="ex" value="2">2
+        <input type="radio" name="ex" value="3">3
+        <input type="radio" name="ex" value="4">más de 3
 
         <br><br>La asignatura me interesa
-        <input type="radio" name="asigint" value="1">Nada
-        <input type="radio" name="asigint" value="2">Algo
-        <input type="radio" name="asigint" value="3">Bastante
-        <input type="radio" name="asigint" value="4">Mucho
+        <input type="radio" name="int" value="1">Nada
+        <input type="radio" name="int" value="2">Algo
+        <input type="radio" name="int" value="3">Bastante
+        <input type="radio" name="int" value="4">Mucho
 
         <br><br>Hago uso de las tutorías
         <input type="radio" name="tut" value="1">Nada
@@ -93,10 +95,10 @@
         <input type="radio" name="cal" value="4">Mucho
 
         <br><br>Asistencia clase (% de horas lectivas)
-        <input type="radio" name="asiclase" value="1">Nada
-        <input type="radio" name="asiclase" value="2">Algo
-        <input type="radio" name="asiclase" value="3">Bastante
-        <input type="radio" name="asiclase" value="4">Mucho
+        <input type="radio" name="asi" value="1">Nada
+        <input type="radio" name="asi" value="2">Algo
+        <input type="radio" name="asi" value="3">Bastante
+        <input type="radio" name="asi" value="4">Mucho
 </nav>
         <br>
         <br>Código de profesor/a
