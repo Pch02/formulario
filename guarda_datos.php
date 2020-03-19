@@ -91,6 +91,12 @@
     $query="INSERT INTO datosencuesta (cod_asignatura,cod_profesor) VALUES ('$a1','$c1')";
     $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
 
+    /*--APARTADO 1--*/
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES ()";
+    $resultado=$connection->query($query);
+
+
+
 
 
 
