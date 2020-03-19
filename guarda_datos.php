@@ -52,6 +52,9 @@
     $c3=$_POST["c3"];
     $c4=$_POST["c4"];
 
+    /*--CONCATENACION PARA CODIDO PROFESOR--*/
+    $c1=$c1.$c2.$c3.$c4;
+
     /*--PREGUNTAS DE LA ENCUESTA--*/
 
     /*--APARTADO 1--*/
@@ -85,6 +88,8 @@
     $connection = mysqli_connect ("localhost", "root", "","formularioPW","3308")
         or die("No se puede conectar al servidor");
 
+    $query="INSERT INTO datosencuesta (cod_asignatura,cod_profesor) VALUES ('$a1','$c1')";
+    $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
 
 
 
