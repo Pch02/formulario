@@ -13,7 +13,7 @@
 <br>
 <nav>
     <h1>Código de la asignatura</h1>
-    <form METHOD="POST" ACTION=guarda_datos.php">
+    <form METHOD="POST" ACTION=guarda_datos.php>
         <br>Titulación
         <input type="number" name="t1" min="0" max="9">
         <input type="number" name="t2" min="0" max="9">
