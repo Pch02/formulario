@@ -92,7 +92,6 @@
     $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
     $idencuesta= $connection->insert_id;
 
-
     /*--INFORMACIÓN ACADÉMICA--*/
     $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (24,$ed,$idencuesta)";
     $resultado=$connection->query($query);
