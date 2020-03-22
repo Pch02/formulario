@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<br><br>
+<br>
 <header><H4>Login Administrador</H4></header>
 <div style="text-align: center;">
     <form method="POST" action="validacion_admin.php">
@@ -14,7 +14,8 @@
         <br />
         Password:<input type="password" name="npassword" placeholder="Contraseña" />
         <br />
-        <button type="submit">Inicar Sesion</button>
+        <br />
+        <button type="submit">Inicar Sesión</button>
     </form>
 </div>
 </body>
