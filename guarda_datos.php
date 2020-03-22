@@ -11,7 +11,7 @@
         <a href="index.php"><li>Volver a Inicio</li></a>
     </ul>
 </nav>
-</body>
+
 
 <?php
     /*--TITULACION--*/
@@ -90,36 +90,116 @@
 
     $query="INSERT INTO datosencuesta (cod_asignatura,cod_profesor) VALUES ('$a1','$c1')";
     $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
+    $idencuesta= $connection->insert_id;
 
-    /*--APARTADO 1--*/
-    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES ()";
+
+    /*--INFORMACIÓN ACADÉMICA--*/
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (24,$ed,$idencuesta)";
     $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (25,$se,$idencuesta)";
+    $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (26,$cma,$idencuesta)";
+    $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (27,$cmb,$idencuesta)";
+    $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (28,$mat,$idencuesta)";
+    $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (29,$ex,$idencuesta)";
+    $resultado=$connection->query($query);
 
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (30,$int,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (31,$tut,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (32,$dif,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (33,$cal,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (34,$asi,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    /*--SECCION 1 ENCUESTA--*/
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (1,$pr1,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    /*--SECCION 2 ENCUESTA--*/
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (2,$pr2,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (3,$pr3,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (4,$pr4,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (5,$pr5,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (6,$pr6,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (7,$pr7,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (8,$pr8,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (9,$pr9,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (10,$pr10,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (11,$pr11,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (12,$pr12,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (13,$pr13,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (14,$pr14,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (15,$pr15,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (16,$pr16,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (17,$pr17,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (18,$pr18,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (19,$pr19,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (20,$pr20,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (21,$pr21,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    /*--SECCION 3 ENCUESTA--*/
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (22,$pr22,$idencuesta)";
+    $resultado=$connection->query($query);
+
+    $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (23,$pr23,$idencuesta)";
+    $resultado=$connection->query($query);
+    $connection->close();
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</body>
 </html>
