@@ -1,0 +1,35 @@
+{   /*establecer margenes y relleno de los lados de un elemento*/
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: WindowText;
+    text-align: center;
+    font-size: 100%;
+}
+
+body{
+    background-color: aliceblue;
+    font-size: x-large;
+}
+
+a{
+    list-style: none;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+}
+
+img.center{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    position: center;
+    bottom: 50px;
+    left: 70px;
+}
