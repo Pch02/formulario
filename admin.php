@@ -2,7 +2,7 @@
 
 <head>
     <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
+    <link rel="stylesheet" type="text/css" href="estilos/estilo_admin.css">
 </head>
 
 <body>
