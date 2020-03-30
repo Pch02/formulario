@@ -88,7 +88,8 @@
     $connection = mysqli_connect ("localhost", "root", "","formulariopw","3308")
         or die("No se puede conectar al servidor");
 
-    $query="INSERT INTO datosencuesta (cod_asignatura,cod_profesor) VALUES ('$a1','$c1')";
+    $fecha_hoy = date("Y-m-d");
+    $query="INSERT INTO datosencuesta (cod_asignatura,fecha,cod_profesor) VALUES ('$a1','$fecha_hoy','$c1')";
     $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
     $idencuesta = mysqli_insert_id($connection); //GENERAMOS UN ID PARA LA ENCUESTA
 
