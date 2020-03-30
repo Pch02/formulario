@@ -85,12 +85,15 @@
     $pr23=$_POST["pr23"];
 
     /*--CONEXION A LA BASE DE DATOS--*/
-    $connection = mysqli_connect ("localhost", "root", "","formularioPW","3308")
+    $connection = mysqli_connect ("localhost", "root", "","formulariopw","3308")
         or die("No se puede conectar al servidor");
 
     $query="INSERT INTO datosencuesta (cod_asignatura,cod_profesor) VALUES ('$a1','$c1')";
     $resultado=$connection->query($query);  //SENTENCIA PARA GUARDAR EN LA BD DATOS RECOGIDOS CON INSERT INTO
-    $idencuesta= $connection->insert_id;
+    $idencuesta = mysqli_insert_id($connection); //GENERAMOS UN ID PARA LA ENCUESTA
+
+    //$ultimoid_query="SELECT last_insert_id()";
+    //$ultimoid=$connection->query($ultimoid_query);
 
     /*--INFORMACIÓN ACADÉMICA--*/
     $query="INSERT INTO datosrespuesta (cod_pregunta,valor,cod_encuesta) VALUES (24,$ed,$idencuesta)";

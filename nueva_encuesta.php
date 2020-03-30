@@ -32,18 +32,18 @@
 <nav>
     <h1>Información personal y académica de los estudiantes</h1>
         <br>Edad
-        <input type="radio" name="ed" value="0">19 o menos
+        <input type="radio" name="ed" value="0" CHECKED>19 o menos
         <input type="radio" name="ed" value="1">20-21
         <input type="radio" name="ed" value="2">22-23
         <input type="radio" name="ed" value="3">24-25
         <input type="radio" name="ed" value="4">más de 25
 
         <br><br>Sexo
-        <input type="radio" name="se" value="0">Hombre
+        <input type="radio" name="se" value="0" CHECKED>Hombre
         <input type="radio" name="se" value="1">Mujer
 
         <br><br>Curso más alto en el que estás matriculado
-        <input type="radio" name="cma" value="1">1º
+        <input type="radio" name="cma" value="1" CHECKED>1º
         <input type="radio" name="cma" value="2">2º
         <input type="radio" name="cma" value="3">3º
         <input type="radio" name="cma" value="4">4º
@@ -51,7 +51,7 @@
         <input type="radio" name="cma" value="6">6º
 
         <br><br>Curso más bajo en el que estás matriculado
-        <input type="radio" name="cmb" value="1">1º
+        <input type="radio" name="cmb" value="1" CHECKED>1º
         <input type="radio" name="cmb" value="2">2º
         <input type="radio" name="cmb" value="3">3º
         <input type="radio" name="cmb" value="4">4º
@@ -59,43 +59,43 @@
         <input type="radio" name="cmb" value="6">6º
 
         <br><br>Veces que te has matriculado en esta asignatura
-        <input type="radio" name="mat" value="1">1
+        <input type="radio" name="mat" value="1" CHECKED>1
         <input type="radio" name="mat" value="2">2
         <input type="radio" name="mat" value="3">3
         <input type="radio" name="mat" value="4">más de 3
 
         <br><br>Veces que te has matinado en esta asignatura
-        <input type="radio" name="ex" value="1">1
+        <input type="radio" name="ex" value="1" CHECKED>1
         <input type="radio" name="ex" value="2">2
         <input type="radio" name="ex" value="3">3
         <input type="radio" name="ex" value="4">más de 3
 
         <br><br>La asignatura me interesa
-        <input type="radio" name="int" value="1">Nada
+        <input type="radio" name="int" value="1" CHECKED>Nada
         <input type="radio" name="int" value="2">Algo
         <input type="radio" name="int" value="3">Bastante
         <input type="radio" name="int" value="4">Mucho
 
         <br><br>Hago uso de las tutorías
-        <input type="radio" name="tut" value="1">Nada
+        <input type="radio" name="tut" value="1" CHECKED>Nada
         <input type="radio" name="tut" value="2">Algo
         <input type="radio" name="tut" value="3">Bastante
         <input type="radio" name="tut" value="4">Mucho
 
         <br><br>Dificultad de esta asignatura
-        <input type="radio" name="dif" value="1">Baja
+        <input type="radio" name="dif" value="1" CHECKED>Baja
         <input type="radio" name="dif" value="2">Media
         <input type="radio" name="dif" value="3">Alta
         <input type="radio" name="dif" value="4">Muy alta
 
         <br><br>Calificación esperada
-        <input type="radio" name="cal" value="1">Nada
+        <input type="radio" name="cal" value="1" CHECKED>Nada
         <input type="radio" name="cal" value="2">Algo
         <input type="radio" name="cal" value="3">Bastante
         <input type="radio" name="cal" value="4">Mucho
 
         <br><br>Asistencia clase (% de horas lectivas)
-        <input type="radio" name="asi" value="1">Nada
+        <input type="radio" name="asi" value="1" CHECKED>Nada
         <input type="radio" name="asi" value="2">Algo
         <input type="radio" name="asi" value="3">Bastante
         <input type="radio" name="asi" value="4">Mucho
