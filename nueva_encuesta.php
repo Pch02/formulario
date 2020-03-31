@@ -391,7 +391,7 @@
     <br>
     </form>
     <br>
-    <a href="index.php"><button type="button" name="myButton" formtarget="_self">Inicio</button></a>
+    <a href="index.php"><button type="button">Inicio</button></a>
 <?php
 ?>
 </body>

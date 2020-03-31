@@ -3,7 +3,7 @@
 <?php
 
     $connection = mysqli_connect ("localhost", "root", "","formulariopw","3308")
-    or die("Connection failed: " . $connection->connect_error);
+        or die("Connection failed: " . $connection->connect_error);
 
     $user = $_POST["usuario"];
     $pass = $_POST["password"];
