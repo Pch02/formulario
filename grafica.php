@@ -41,6 +41,7 @@
         $opcion=$_GET['opcion'];
     }
 
+    //OPCION 1
     if ($opcion = 1){
         $edad1=0;
         if($res=$connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 0;")){
@@ -71,6 +72,30 @@
             array ("label" => "Personas >25", "y" => $edad5)
         );
     }
+
+    //OPCION 2
+    if ($opcion == 2){
+        $opc
+    }
+    //OPCION 3
+    //OPCION 4
+    //OPCION 5
+    //OPCION 6
+    //OPCION 7
+    //OPCION 8
+    //OPCION 9
+    //OPCION 10
+    //OPCION 11
+    //OPCION 12
+    //OPCION 13
+    //OPCION 14
+    //OPCION 15
+    //OPCION 16
+    //OPCION 17
+    //OPCION 18
+
+
+
 ?>
 </body>
 <script>
@@ -95,6 +120,58 @@
                         case 1:{
                             echo json_encode($datos_edad,JSON_NUMERIC_CHECK);
                             break;
+                        }
+                        case 2:{
+                            echo json_enconde();
+                            break;
+                        }
+                        case 3:{
+
+                        }
+                        case 4:{
+
+                        }
+                        case 5:{
+
+                        }
+                        case 6:{
+
+                        }
+                        case 7:{
+
+                        }
+                        case 8:{
+
+                        }
+                        case 9:{
+
+                        }
+                        case 10:{
+
+                        }
+                        case 11:{
+
+                        }
+                        case 12:{
+
+                        }
+                        case 13:{
+
+                        }
+                        case 14:{
+
+                        }
+                        case 15:{
+
+                        }
+                        case 16:{
+
+                        }
+                        case 17:{
+
+                        }
+                        case 18:{
+
                         }
                     }
                 ?>
