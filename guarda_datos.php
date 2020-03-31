@@ -33,6 +33,7 @@
     $t1=$t1.$t2.$t3.$t4;
     $a1=$a1.$a2.$a3;
 
+
     /*--INFORMACION PERSONAL Y ACADEMICA--*/
     $ed=$_POST["ed"];   //Edad
     $se=$_POST["se"];   //Sexo

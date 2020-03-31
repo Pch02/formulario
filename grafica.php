@@ -77,15 +77,17 @@
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer",{
             animationEnabled: true,
-            exportEnabled:true,
+            theme:"light2",
+            title: {
+                text: "Encuesta de satisfacción"
+            },
 
             data: [{
-                type: "pie",
-                showInLegend: "true",
-                legendText: "{label}",
-                indexLabelFontSize: 16,
-                indexLabel: "{label} - #percent%",
-                yValueFormatString: ",##0",
+                type: "column",
+                yValueFormatString: "#,##0\"%\"",
+                indexLabel: "{y}",
+                indexLabelPlacement: "inside",
+                indexLabelFontColor: "white",
                 dataPoints:
                 <?php
                     $opcion=$_GET["opcion"];
@@ -97,7 +99,8 @@
                     }
                 ?>
             }]
-        })
+        });
+        chart.render();
     }
 </script>
 <body>
