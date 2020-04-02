@@ -75,7 +75,7 @@
 
     //OPCION 2
     if ($opcion == 2){
-        $opc
+        $opc;
     }
     //OPCION 3
     //OPCION 4
@@ -102,6 +102,7 @@
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer",{
             animationEnabled: true,
+
             theme:"light2",
             title: {
                 text: "Encuesta de satisfacción"
