@@ -41,6 +41,7 @@
         $opcion=$_GET['opcion'];
     }
 
+    //OPCIONES DE ALUMNADO
     //OPCION 1
     if ($opcion = 1){
         $edad1=0;
@@ -60,7 +61,7 @@
             $edad4=$res->num_rows;
         }
         $edad5=0;
-        if($res=$connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 4")){
+        if($res=$connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 4;")){
             $edad5=$res->num_rows;
         }
 
@@ -74,25 +75,290 @@
     }
 
     //OPCION 2
-    if ($opcion == 2){
-        $opc;
+    if ($opcion = 2) {
+        $sexo1 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 25 AND valor = 0;")) {
+            $sexo1 = $res->num_rows;
+        }
+        $sexo2 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 25 AND valor = 1;")) {
+            $sexo2 = $res->num_rows;
+        }
+
+        $datos_sexo = array(
+            array("label" => "Hombres", "y" => $sexo1),
+            array("label" => "Mujeres", "y" => $sexo2)
+        );
     }
+
     //OPCION 3
+    if ($opcion = 3) {
+        $cursoalto1 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 1;")) {
+            $cursoalto1 = $res->num_rows;
+        }
+        $cursoalto2 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 2;")) {
+            $cursoalto2 = $res->num_rows;
+        }
+        $cursoalto3 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 3;")) {
+            $cursoalto3 = $res->num_rows;
+        }
+        $cursoalto4 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 4;")) {
+            $cursoalto4 = $res->num_rows;
+        }
+        $cursoalto5 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 5;")) {
+            $cursoalto5 = $res->num_rows;
+        }
+        $cursoalto6 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 26 AND valor = 6;")) {
+            $cursoalto6 = $res->num_rows;
+        }
+
+        $datos_cursoalto = array (
+            array ("label" => "1º", "y"=> $cursoalto1),
+            array ("label" => "2º", "y"=> $cursoalto2),
+            array ("label" => "3º", "y" => $cursoalto3),
+            array ("label" => "4º", "y" => $cursoalto4),
+            array ("label" => "5º", "y" => $cursoalto5),
+            array ("label" => "6º", "y" => $cursoalto6)
+        );
+    }
+
     //OPCION 4
+    if ($opcion = 4) {
+        $cursobajo1 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 1;")) {
+            $cursobajo1 = $res->num_rows;
+        }
+        $cursobajo2 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 2;")) {
+            $cursobajo2 = $res->num_rows;
+        }
+        $cursobajo3 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 3;")) {
+            $cursobajo3 = $res->num_rows;
+        }
+        $cursobajo4 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 4;")) {
+            $cursobajo4 = $res->num_rows;
+        }
+        $cursobajo5 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 5;")) {
+            $cursobajo5 = $res->num_rows;
+        }
+        $cursobajo6 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 27 AND valor = 6;")) {
+            $cursobajo6 = $res->num_rows;
+        }
+
+        $datos_cursobajo = array (
+            array ("label" => "1º", "y"=> $cursobajo1),
+            array ("label" => "2º", "y"=> $cursobajo2),
+            array ("label" => "3º", "y" => $cursobajo3),
+            array ("label" => "4º", "y" => $cursobajo4),
+            array ("label" => "5º", "y" => $cursobajo5),
+            array ("label" => "6º", "y" => $cursobajo6)
+        );
+    }
+
     //OPCION 5
+    if ($opcion = 5) {
+        $matri1 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 28 AND valor = 1;")) {
+            $matri1 = $res->num_rows;
+        }
+        $matri2 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 28 AND valor = 2;")) {
+            $matri2 = $res->num_rows;
+        }
+        $matri3 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 28 AND valor = 3;")) {
+            $matri3 = $res->num_rows;
+        }
+        $matri4 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 28 AND valor = 4;")) {
+            $matri4 = $res->num_rows;
+        }
+
+        $datos_matriculas = array (
+            array ("label" => "Una vez", "y"=> $matri1),
+            array ("label" => "Dos veces", "y"=> $matri2),
+            array ("label" => "Tres veces", "y" => $matri3),
+            array ("label" => "Más de tres veces", "y" => $matri4)
+        );
+    }
+
     //OPCION 6
+    if ($opcion = 6) {
+        $exam1 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 29 AND valor = 1;")) {
+            $exam1 = $res->num_rows;
+        }
+        $exam2 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 29 AND valor = 2;")) {
+            $exam2 = $res->num_rows;
+        }
+        $exam3 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 29 AND valor = 3;")) {
+            $exam3 = $res->num_rows;
+        }
+        $exam4 = 0;
+        if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 29 AND valor = 4;")) {
+            $exam4 = $res->num_rows;
+        }
+
+        $datos_examinados = array (
+            array ("label" => "1º", "y"=> $cursobajo1),
+            array ("label" => "2º", "y"=> $cursobajo2),
+            array ("label" => "3º", "y" => $cursobajo3),
+            array ("label" => "4º", "y" => $cursobajo4)
+        );
+    }
+
     //OPCION 7
+if ($opcion = 1) {
+    $edad1 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 30 AND valor = 0;")) {
+        $edad1 = $res->num_rows;
+    }
+    $edad2 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 30 AND valor = 1;")) {
+        $edad2 = $res->num_rows;
+    }
+    $edad3 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 30 AND valor = 2;")) {
+        $edad3 = $res->num_rows;
+    }
+    $edad4 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 30 AND valor = 3;")) {
+        $edad4 = $res->num_rows;
+    }
+}
+
+
+
     //OPCION 8
+if ($opcion = 1) {
+    $edad1 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 0;")) {
+        $edad1 = $res->num_rows;
+    }
+    $edad2 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 1;")) {
+        $edad2 = $res->num_rows;
+    }
+    $edad3 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 2;")) {
+        $edad3 = $res->num_rows;
+    }
+    $edad4 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 3;")) {
+        $edad4 = $res->num_rows;
+    }
+}
+
+
+
     //OPCION 9
+if ($opcion = 1) {
+    $edad1 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 0;")) {
+        $edad1 = $res->num_rows;
+    }
+    $edad2 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 1;")) {
+        $edad2 = $res->num_rows;
+    }
+    $edad3 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 2;")) {
+        $edad3 = $res->num_rows;
+    }
+    $edad4 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 3;")) {
+        $edad4 = $res->num_rows;
+    }
+    $edad5 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 4;")) {
+        $edad5 = $res->num_rows;
+    }
+}
+
     //OPCION 10
+if ($opcion = 1) {
+    $edad1 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 0;")) {
+        $edad1 = $res->num_rows;
+    }
+    $edad2 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 1;")) {
+        $edad2 = $res->num_rows;
+    }
+    $edad3 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 2;")) {
+        $edad3 = $res->num_rows;
+    }
+    $edad4 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 3;")) {
+        $edad4 = $res->num_rows;
+    }
+    $edad5 = 0;
+    if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 24 AND valor = 4;")) {
+        $edad5 = $res->num_rows;
+    }
+}
+
+
+    //OPCIONES DE PROFESORADO
     //OPCION 11
+
+
+
+
     //OPCION 12
+
+
+
+
+
     //OPCION 13
+
+
+
+
+
     //OPCION 14
+
+
+
+
     //OPCION 15
+
+
+
+
+
     //OPCION 16
+
+
+
+
+
     //OPCION 17
+
+
+
+
+
     //OPCION 18
+
+
+
+
+
 
 
 
@@ -110,7 +376,7 @@
 
             data: [{
                 type: "column",
-                yValueFormatString: "#,##0\"%\"",
+                //yValueFormatString: "#,##0\",
                 indexLabel: "{y}",
                 indexLabelPlacement: "inside",
                 indexLabelFontColor: "white",
@@ -123,56 +389,72 @@
                             break;
                         }
                         case 2:{
-                            echo json_enconde();
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
                             break;
                         }
                         case 3:{
-
+                            echo json_encode($datos_cursoalto,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 4:{
-
+                            echo json_encode($datos_cursobajo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 5:{
-
+                            echo json_encode($datos_matriculas,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 6:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 7:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 8:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 9:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 10:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 11:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 12:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 13:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 14:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 15:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 16:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 17:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                         case 18:{
-
+                            echo json_encode($datos_sexo,JSON_NUMERIC_CHECK);
+                            break;
                         }
                     }
                 ?>
