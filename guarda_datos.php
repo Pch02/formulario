@@ -57,7 +57,7 @@
     $c1=$c1.$c2.$c3.$c4;
 
     /*--PREGUNTAS DE LA ENCUESTA--*/
-
+    /*--Numeración de las variables en las preguntas de profesorados de 1-23, para no crear confusión--*/
     /*--APARTADO 1--*/
     $pr1=$_POST["pr1"];
     /*--APARTADO 2--*/
