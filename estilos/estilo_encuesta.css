@@ -1,31 +1,39 @@
 body {
-    margin: 0;
+    margin: 40px;
     padding: 0;
     font-family: sans-serif;
     background: #2d3436;
 }
 .bot{
-    width: 600px;
-    padding: 40px;
+    width: 700px;
+    padding: 70px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: #b2bec3;
     text-align: center;
-    position: relative;
-    margin-top: 900px;
+    position: page;
+    margin-top: 700px;
+
 }
 .bot h1{
-    font-size: medium;
+    font-size: large;
     text-transform: uppercase;
     color: white;
     font-weight: 100;
 }
 .bot h2{
     font-size: medium;
+    color: darkred;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.bot h3{
+    font-size: medium;
     color: white;
     font-weight: 100;
+    text-transform: uppercase;
 }
 .boton1 {
     border: 1px solid #2980b9;
@@ -37,6 +45,18 @@ body {
     margin: 5px;
     transition: 0.5s;
     position: relative;
+    overflow: hidden;
+}
+.inicio{
+    border: 1px solid lawngreen;
+    background: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.5s;
+    position: page;
     overflow: hidden;
 }
 

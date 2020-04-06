@@ -7,16 +7,16 @@
     <form class = "bot" METHOD="POST" ACTION="guarda_datos.php">
         <h1>Encuesta de opinión de los/as estudiantes sobre la labor docente del profesorado</h1>
     <h2>Código de la asignatura</h2>
-        <br>Titulación
+        Titulación
         <input type="number" name="t1" min="0" max="9">
         <input type="number" name="t2" min="0" max="9">
         <input type="number" name="t3" min="0" max="9">
         <input type="number" name="t4" min="0" max="9">
-        <br>Asignatura
+        <br><br>Asignatura
         <input type="number" name="a1" min="0" max="9">
         <input type="number" name="a2" min="0" max="9">
         <input type="number" name="a3" min="0" max="9">
-        <br>Grupo
+        <br><br>Grupo
         <input type="number" name="g1" min="0" max="9">
         <input type="number" name="g2" min="0" max="9">
 
@@ -96,17 +96,15 @@
         <input type="number" name="c3" min="0" max="9">
         <input type="number" name="c4" min="0" max="9">
 
-    <br>
+    <br><br>
     <h2>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
     Tu colaboración es necesaria y consiste en señalar en la escala de respuesta tu grado de acuerdo con cada una de las afirmaciones (1 es totalmente en desacuerdo y
     5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
     </h2>
     <br>
 <!--APARTADO 1-->
-    <h2>
-        Planificación de la enseñanza y aprendizaje
-    </h2>
-        <br>1. El/la profesor/a informa sobre los distintos aspectos de la guia docente o programa de la asignatura (objetivos, actividades, contenidos del temario, metodología, bibliografía, sistemas de evalucación,...)
+    <h2>Planificación de la enseñanza y aprendizaje</h2>
+        1. El/la profesor/a informa sobre los distintos aspectos de la guia docente o programa de la asignatura (objetivos, actividades, contenidos del temario, metodología, bibliografía, sistemas de evalucación,...)
         <select name="pr1">
             <option value="0"> NS
             <option value="1"> 1
@@ -116,17 +114,10 @@
             <option value="5"> 5
         </select>
 <!--APARTADO 2-->
-<nav>
     <br>
-    <h2>
-        Desarrollo de la docencia
-    </h2>
-
-    <br><h3>
-        Cumplimiento de las obligaciones docentes (del encargo docente)
-    </h3>
-
-        <br>2. Imparte las clases en el horario fijado
+    <h2>Desarrollo de la docencia</h2>
+    <h3>Cumplimiento de las obligaciones docentes (del encargo docente)</h3>
+        2. Imparte las clases en el horario fijado
         <select name="pr2">
             <option value="0"> NS
             <option value="1"> 1
@@ -156,11 +147,9 @@
             <option value="5"> 5
         </select>
 
-    <br><br><h3>
-        Cumplimiento de la planificación
-    </h3>
+    <br><h3>Cumplimiento de la planificación</h3>
 
-        <br>5. Se ajusta a la planificación de la asignatura
+        5. Se ajusta a la planificación de la asignatura
         <select name="pr5">
             <option value="0"> NS
             <option value="1"> 1
@@ -200,11 +189,8 @@
             <option value="5"> 5
         </select>
 
-    <br><br><h3>
-        Metodología docente
-    </h3>
-
-        <br>9. El/la profesor/a organiza bien las actividades que se realizan en clase
+    <br><h3>Metodología docente</h3>
+        9. El/la profesor/a organiza bien las actividades que se realizan en clase
         <select name="pr9">
             <option value="0"> NS
             <option value="1"> 1
@@ -224,11 +210,9 @@
             <option value="5"> 5
         </select>
 
-    <br><br><h3>
-        Competencias docentes desarrolladas por el/la profesor/a
-    </h3>
+    <br><h3>Competencias docentes desarrolladas por el/la profesor/a</h3>
 
-        <br>11. Explica con claridad y resalta los contenidos importantes
+        11. Explica con claridad y resalta los contenidos importantes
         <select name="pr11">
             <option value="0"> NS
             <option value="1"> 1
@@ -318,11 +302,8 @@
             <option value="5"> 5
         </select>
 
-    <br><br><h3>
-        Sistemas de evaluación
-    </h3>
-
-        <br>20. Tengo claro lo que se me va a exigir para superar esta asignatura
+    <br><h3>Sistemas de evaluación</h3>
+        20. Tengo claro lo que se me va a exigir para superar esta asignatura
         <select name="pr20">
             <option value="0"> NS
             <option value="1"> 1
@@ -341,14 +322,10 @@
             <option value="4"> 4
             <option value="5"> 5
         </select>
-</nav>
 
 <!--APARTADO 3-->
-<nav>
-    <br><h2>
-        Resultados
-    </h2>
-        <br>22. Las actividades desarrolladas (teóricas, prácticas, de trabajo individual, en grupo,...) contribuyen a alcanzar los objetivos de la asignatura
+    <br><h2>Resultados</h2>
+        22. Las actividades desarrolladas (teóricas, prácticas, de trabajo individual, en grupo,...) contribuyen a alcanzar los objetivos de la asignatura
         <select name="pr22">
             <option value="0"> NS
             <option value="1"> 1
@@ -367,11 +344,10 @@
             <option value="4"> 4
             <option value="5"> 5
         </select>
-</nav>
     <br>
     <br>
     <input type="submit" class="boton1" value="Enviar">
-        <a href="index.php"><button class="boton1">Inicio</button></a>
     </form>
+    <a href="index.php"><button class="inicio">Inicio</button></a>
 </body>
 </html>
