@@ -2,18 +2,11 @@
 <link rel="stylesheet" type="text/css" href="estilos/estilo_encuesta.css">
 <head>
     <title>Nueva encuesta</title>
-    <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
-
-<header>
-    Encuesta de opinión de los/as estudiantes sobre la labor docente del profesorado
-</header>
-
 <body>
-<br>
-<nav>
-    <h1>Código de la asignatura</h1>
-    <form METHOD="POST" ACTION="guarda_datos.php">
+    <form class = "bot" METHOD="POST" ACTION="guarda_datos.php">
+        <h1>Encuesta de opinión de los/as estudiantes sobre la labor docente del profesorado</h1>
+    <h2>Código de la asignatura</h2>
         <br>Titulación
         <input type="number" name="t1" min="0" max="9">
         <input type="number" name="t2" min="0" max="9">
@@ -26,11 +19,8 @@
         <br>Grupo
         <input type="number" name="g1" min="0" max="9">
         <input type="number" name="g2" min="0" max="9">
-</nav>
-<br>
 
-<nav>
-    <h1>Información personal y académica de los estudiantes</h1>
+    <h2>Información personal y académica de los estudiantes</h2>
         <br>Edad
         <input type="radio" name="ed" value="0" CHECKED>19 o menos
         <input type="radio" name="ed" value="1">20-21
@@ -99,25 +89,20 @@
         <input type="radio" name="asi" value="2">Algo
         <input type="radio" name="asi" value="3">Bastante
         <input type="radio" name="asi" value="4">Mucho
-</nav>
-        <br>
-        <br>Código de profesor/a
+
+        <br><br>Código de profesor/a
         <input type="number" name="c1" min="0" max="9">
         <input type="number" name="c2" min="0" max="9">
         <input type="number" name="c3" min="0" max="9">
         <input type="number" name="c4" min="0" max="9">
 
-    <br><br>
-    <h1>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
+    <br>
+    <h2>A continuación se presentan una serie de cuestiones relativas a la docencia en esta asignatura.
     Tu colaboración es necesaria y consiste en señalar en la escala de respuesta tu grado de acuerdo con cada una de las afirmaciones (1 es totalmente en desacuerdo y
     5 totalmente de acuerdo). Si el enunciado no procede o tienes suficiente información, marca con NS.
-    </h1>
+    </h2>
     <br>
-    <br>
-
-
 <!--APARTADO 1-->
-<nav>
     <h2>
         Planificación de la enseñanza y aprendizaje
     </h2>
@@ -130,8 +115,6 @@
             <option value="4"> 4
             <option value="5"> 5
         </select>
-</nav>
-
 <!--APARTADO 2-->
 <nav>
     <br>
@@ -387,12 +370,8 @@
 </nav>
     <br>
     <br>
-    <input type="submit" name="Enviar" value="Enviar">
-    <br>
+    <input type="submit" class="boton1" value="Enviar">
+        <a href="index.php"><button class="boton1">Inicio</button></a>
     </form>
-    <br>
-    <a href="index.php"><button type="button">Inicio</button></a>
-<?php
-?>
 </body>
 </html>

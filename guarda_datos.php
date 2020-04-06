@@ -1,16 +1,15 @@
 <html>
+<link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 <head>
     <title>Encuesta de satisfacción</title>
-    <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
 
-<header>Datos guardados</header>
+<div class = "bot">
+<h1>Datos guardados</h1>
 <body>
-<nav>
-    <ul>
-        <a href="index.php"><li>Volver a Inicio</li></a>
-    </ul>
-</nav>
+        <a href = "index.php"><button class = "boton1">Volver a inicio</button></a>
+</body>
+</div>
 
 
 <?php
