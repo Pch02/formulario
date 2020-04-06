@@ -21,7 +21,7 @@
 <div class = "bot">
     <?php
     if($logeado == false){
-        echo "<h1>Encuesta de satisfacción del profesorado</h1>";
+        echo "<h1>Credenciales incorrectas</h1>";
         echo "<a href = \"index.php\"><button class = \"boton1\">Volver a inicio</button></a>";
     }
     else if($logeado == true){
