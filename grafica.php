@@ -1,47 +1,42 @@
-<HTML Lang="es">
-<link rel="stylesheet" type="text/css" href="estilos/estilo_graficos.css">
-<header>Seleccione filtrado:</header>
+<html Lang="es">
+<link rel="stylesheet" type="text/css" href="estilos/estilo_graficas.css">
+<head>
+    <title>Consulta de resultados</title>
+</head>
+
 <body>
-<nav>
-    <ul>
-        <a href="index.php"><li><button type="button">Volver a inicio</button></li></a>
+    <div class = "bot">
+        <a href="index.php"><button class="boton1">Volver a inicio</button></a>
         <h1>Datos del alumnado</h1>
-        <a href="?opcion=1"><li><button type="button">Edad</button></li></a>
-        <a href="?opcion=2"><li><button type="button">Sexo</button></li></a>
-        <a href="?opcion=3"><li><button type="button">Curso más alto</button></li></a>
-        <a href="?opcion=4"><li><button type="button">Curso más bajo</button></li></a>
-        <a href="?opcion=5"><li><button type="button">Número de matrículas</button></li></a>
-        <a href="?opcion=6"><li><button type="button">Veces examinado</button></li></a>
-        <a href="?opcion=7"><li><button type="button">Interés general</button></li></a>
-        <a href="?opcion=8"><li><button type="button">Uso de tutorías</button></li></a>
-        <a href="?opcion=9"><li><button type="button">Dificultad</button></li></a>
-        <a href="?opcion=10"><li><button type="button">Calificación esperada</button></li></a>
-        <a href="?opcion=11"><li><button type="button">Asistencia a clase</button></li></a>
-    </ul>
-</nav>
-<nav>
-    <ul>
+        <a href="?opcion=1"><button class="boton1">Edad</button></a>
+        <a href="?opcion=2"><button class="boton1">Sexo</button></a>
+        <a href="?opcion=3"><button class="boton1">Curso más alto</button></a>
+        <a href="?opcion=4"><button class="boton1">Curso más bajo</button></a>
+        <a href="?opcion=5"><button class="boton1">Número de matrículas</button></a>
+        <a href="?opcion=6"><button class="boton1">Veces examinado</button></a>
+        <a href="?opcion=7"><button class="boton1">Interés general</button></a>
+        <a href="?opcion=8"><button class="boton1">Uso de tutorías</button></a>
+        <a href="?opcion=9"><button class="boton1">Dificultad</button></a>
+        <a href="?opcion=10"><button class="boton1">Calificación esperada</button></a>
+        <a href="?opcion=11"><button class="boton1">Asistencia a clase</button></a>
         <h1>Evaluación del profesorado</h1>
-        <a href="?opcion=12"><li><button type="button">Apartado 1</button></li></a>
-        <a href="?opcion=13"><li><button type="button">Apartado 2</button></li></a>
-        <a href="?opcion=14"><li><button type="button">Apartado 2.1</button></li></a>
-        <a href="?opcion=15"><li><button type="button">Apartado 2.2</button></li></a>
-        <a href="?opcion=16"><li><button type="button">Apartado 2.3</button></li></a>
-        <a href="?opcion=17"><li><button type="button">Apartado 2.4</button></li></a>
-        <a href="?opcion=18"><li><button type="button">Apartado 2.5</button></li></a>
-        <a href="?opcion=19"><li><button type="button">Apartado 3</button></li></a>
-    </ul>
-</nav>
+        <a href="?opcion=12"><button class="boton1">Apartado 1</button></a>
+        <a href="?opcion=13"><button class="boton1">Apartado 2</button></a>
+        <a href="?opcion=14"><button class="boton1">Apartado 2.1</button></a>
+        <a href="?opcion=15"><button class="boton1">Apartado 2.2</button></a>
+        <a href="?opcion=16"><button class="boton1">Apartado 2.3</button></a>
+        <a href="?opcion=17"><button class="boton1">Apartado 2.4</button></a>
+        <a href="?opcion=18"><button class="boton1">Apartado 2.5</button></a>
+        <a href="?opcion=19"><button class="boton1">Apartado 3</button></a>
+    </div>
+</body>
 <?php
     define ('SCRIPTPATH','/phpChart/');
     $connection = mysqli_connect("localhost","root","","formulariopw",3308)
         or die("Connection failed: " . $connection->connect_error);
 
-    if (empty($_GET["opcion"])){
-        echo "Seleccione una opción por favor";
-    }else{
-        $opcion=$_GET['opcion'];
-    }
+    $opcion = isset($_GET['opcion']) ? $_GET['opcion'] : null ;
+    //$opcion=$_GET['opcion'];
 
     switch ($opcion) {
         //OPCIONES DE ALUMNADO
@@ -362,9 +357,9 @@
                 }
 
                 $datos_asistencias = array(
-                    array("label" => "Menos del 50%", "y" => $cali1),
-                    array("label" => "Entre 50% y 80%", "y" => $cali2),
-                    array("label" => "Más de 80%", "y" => $cali3)
+                    array("label" => "Menos del 50%", "y" => $asis1),
+                    array("label" => "Entre 50% y 80%", "y" => $asis2),
+                    array("label" => "Más de 80%", "y" => $asis3)
                 );
             };
             break;
@@ -679,7 +674,6 @@
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer",{
             animationEnabled: true,
-
             theme:"light1",
             title: {
                 text: "Encuesta de satisfacción"
@@ -730,7 +724,8 @@
                         break;
                         case 8:{
                             echo json_encode($datos_tutorias,JSON_NUMERIC_CHECK);
-                        }
+                        };
+                        break;
                         case 9:{
                             echo json_encode($datos_dificultad,JSON_NUMERIC_CHECK);
                         };
@@ -783,7 +778,7 @@
     }
 </script>
 <body>
-<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<div id="chartContainer" style="height:350px; width: 100%; position: relative;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </HTML>

@@ -2,21 +2,12 @@
 <link rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 <head>
     <title>Encuesta de satisfacción</title>
-    <style type="text/css"> BODY{ font-family: Arial; } </style>
 </head>
-
-<header>Encuesta de satisfacción del profesorado</header>
-
 <body>
-<nav>
-    <ul>
-        <a href="nueva_encuesta.php"><li><button type="button">Nueva encuesta</button></li></a>
-        <a href="admin.php"><li><button type="button">Consultar resultados</button></li></a>
-    </ul>
-</nav>
-
-<footer>
-    <img src="images/logouca.png" width="100" height="100" alt="Suni" class="center">
-</footer>
+<div class="bot">
+    <h1>Encuesta de satisfacción del profesorado</h1>
+    <a href = "nueva_encuesta.php"><button class = "boton1">Nueva encuesta</button></a>
+    <a href = "admin.php"><button class = "boton1">Consulta de resultados</button></a>
+</div>
 </body>
 </HTML>

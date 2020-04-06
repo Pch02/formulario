@@ -1,7 +1,6 @@
 <html lang="es">
 <LINK rel="stylesheet" type="text/css" href="estilos/estilo_index.css">
 <?php
-
     $connection = mysqli_connect ("localhost", "root", "","formulariopw","3308")
         or die("Connection failed: " . $connection->connect_error);
 
@@ -18,16 +17,19 @@
              }
         }
     }
-
+    ?>
+<div class = "bot">
+    <?php
     if($logeado == false){
-        echo "Error en la autentificacion";
-        echo "<nav><ul><a href='index.php'><li>Volver a inicio</li></a>";
+        echo "<h1>Encuesta de satisfacción del profesorado</h1>";
+        echo "<a href = \"index.php\"><button class = \"boton1\">Volver a inicio</button></a>";
     }
     else if($logeado == true){
-        echo "Bienvenido usuario $user";
-        echo "<nav><ul><a href='grafica.php'><li>Estadisticas de las encuestas</li></a>";
-        echo "<a href='index.php'><li>Volver a Inicio</li></a></ul></nav>";
+        echo "<h1>Bienvenido usuario $user</h1>";
+        echo "<a href = \"grafica.php\"><button class = \"boton1\">Estadísticas de encuestas</button></a>";
+        echo "<a href = \"index.php\"><button class = \"boton1\">Volver a inicio</button></a>";
     }
 ?>
+</div>
 </html>
 
