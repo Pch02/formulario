@@ -22,7 +22,7 @@
     <?php
     if($logeado == false){
         echo "<h1>Credenciales incorrectas</h1>";
-        echo "<a href = \"index.php\"><button class = \"boton1\">Volver a inicio</button></a>";
+        echo "<a href = \"admin.php\"><button class = \"boton1\">Volver a intentar</button></a>";
     }
     else if($logeado == true){
         echo "<h1>Bienvenido usuario $user</h1>";

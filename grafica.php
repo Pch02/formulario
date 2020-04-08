@@ -674,6 +674,7 @@
     window.onload = function () {
         var chart = new CanvasJS.Chart("chartContainer",{
             animationEnabled: true,
+            exportEnabled: true,
             theme:"light1",
             title: {
                 text: "Encuesta de satisfacción"
