@@ -79,10 +79,12 @@
         <input type="radio" name="dif" value="4">Muy alta
 
         <br><br>Calificación esperada
-        <input type="radio" name="cal" value="1" CHECKED>Nada
-        <input type="radio" name="cal" value="2">Algo
-        <input type="radio" name="cal" value="3">Bastante
-        <input type="radio" name="cal" value="4">Mucho
+        <input type="radio" name="cal" value="1" CHECKED>N.P
+        <input type="radio" name="cal" value="2">Suspenso
+        <input type="radio" name="cal" value="3">Aprobado
+        <input type="radio" name="cal" value="4">Notable
+        <input type="radio" name="cal" value="5">Sobresaliente
+        <input type="radio" name="cal" value="6">Mat. Honor
 
         <br><br>Asistencia clase (% de horas lectivas)
         <input type="radio" name="asi" value="1" CHECKED>Nada
