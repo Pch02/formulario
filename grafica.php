@@ -699,7 +699,6 @@
                     }else{
                         $notamedia_ap3=0;
                     }
-
                         $datos_apartado3 = array(
                             array("label" => "NS", "y" => $apartado3_1),
                             array("label" => "1", "y" => $apartado3_2),
