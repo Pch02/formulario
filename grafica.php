@@ -39,7 +39,6 @@
     $opcion = isset($_GET['opcion']) ? $_GET['opcion'] : null ;
     //$opcion=$_GET['opcion'];
 
-    if ($correcto = true) {
         switch ($opcion) {
             //OPCIONES DE ALUMNADO
             //OPCION 1
@@ -66,15 +65,12 @@
                         $edad5 = $res->num_rows;
                     }
 
-                    $media_edad = round((($edad1+$edad2+$edad3+$edad4+$edad5)/5),0);
-
                     $datos_edad = array(
                         array("label" => "Personas <19", "y" => $edad1),
                         array("label" => "Personas 20-21", "y" => $edad2),
                         array("label" => "Personas 22-23", "y" => $edad3),
                         array("label" => "Personas 24-25", "y" => $edad4),
-                        array("label" => "Personas >25", "y" => $edad5),
-                        array("label" => "Media = opción $media_edad", "y" => $media_edad)
+                        array("label" => "Personas >25", "y" => $edad5)
                     );
                 };
                 break;
@@ -90,12 +86,9 @@
                         $sexo2 = $res->num_rows;
                     }
 
-                    $media_sexo = round((($sexo1+$sexo2)/2),0);
-
                     $datos_sexo = array(
                         array("label" => "Hombres", "y" => $sexo1),
-                        array("label" => "Mujeres", "y" => $sexo2),
-                        array("label" => "Media = opción $media_sexo", "y" => $media_sexo)
+                        array("label" => "Mujeres", "y" => $sexo2)
                     );
                 };
                 break;
@@ -127,16 +120,13 @@
                         $cursoalto6 = $res->num_rows;
                     }
 
-                    $cursoalto_media = round((($cursoalto1+$cursoalto2+$cursoalto3+$cursoalto4+$cursoalto5+$cursoalto6)/6),0);
-
                     $datos_cursoalto = array(
                         array("label" => "1º", "y" => $cursoalto1),
                         array("label" => "2º", "y" => $cursoalto2),
                         array("label" => "3º", "y" => $cursoalto3),
                         array("label" => "4º", "y" => $cursoalto4),
                         array("label" => "5º", "y" => $cursoalto5),
-                        array("label" => "6º", "y" => $cursoalto6),
-                        array("label" => "Media = opción $cursoalto_media", "y" => $cursoalto_media)
+                        array("label" => "6º", "y" => $cursoalto6)
                     );
                 };
                 break;
@@ -168,16 +158,13 @@
                         $cursobajo6 = $res->num_rows;
                     }
 
-                    $cursobajo_media = round((($cursobajo1+$cursobajo2+$cursobajo3+$cursobajo4+$cursobajo5+$cursobajo6)/6),0);
-
                     $datos_cursobajo = array(
                         array("label" => "1º", "y" => $cursobajo1),
                         array("label" => "2º", "y" => $cursobajo2),
                         array("label" => "3º", "y" => $cursobajo3),
                         array("label" => "4º", "y" => $cursobajo4),
                         array("label" => "5º", "y" => $cursobajo5),
-                        array("label" => "6º", "y" => $cursobajo6),
-                        array("label" => "Media = opción $cursobajo_media", "y" => $cursobajo_media)
+                        array("label" => "6º", "y" => $cursobajo6)
                     );
                 };
                 break;
@@ -201,14 +188,11 @@
                         $matri4 = $res->num_rows;
                     }
 
-                    $matri_media = round((($matri1+$matri2+$matri3+$matri4)/4),0);
-
                     $datos_matriculas = array(
                         array("label" => "Una vez", "y" => $matri1),
                         array("label" => "Dos veces", "y" => $matri2),
                         array("label" => "Tres veces", "y" => $matri3),
-                        array("label" => "Más de tres veces", "y" => $matri4),
-                        array("label" => "Media = opción $matri_media", "y" => $matri_media)
+                        array("label" => "Más de tres veces", "y" => $matri4)
                     );
                 };
                 break;
@@ -232,14 +216,11 @@
                         $exam4 = $res->num_rows;
                     }
 
-                    $exam_media = round((($exam1+$exam2+$exam3+$exam4)/4),0);
-
                     $datos_examinados = array(
                         array("label" => "Una vez", "y" => $exam1),
                         array("label" => "Dos veces", "y" => $exam2),
                         array("label" => "Tres veces", "y" => $exam3),
                         array("label" => "Más de tres veces", "y" => $exam4),
-                        array("label" => "Media = opción $exam_media", "y" => $exam_media)
                     );
                 };
                 break;
@@ -263,14 +244,11 @@
                         $interes4 = $res->num_rows;
                     }
 
-                    $interes_media = round((($interes1+$interes2+$interes3+$interes4)/4),0);
-
                     $datos_interes = array(
                         array("label" => "Nada", "y" => $interes1),
                         array("label" => "Algo", "y" => $interes2),
                         array("label" => "Bastante", "y" => $interes3),
-                        array("label" => "Mucho", "y" => $interes4),
-                        array("label" => "Media = opción $interes_media", "y" => $interes_media)
+                        array("label" => "Mucho", "y" => $interes4)
                     );
                 };
                 break;
@@ -293,15 +271,12 @@
                     if ($res = $connection->query("SELECT * FROM datosrespuesta WHERE cod_pregunta = 31 AND valor = 4;")) {
                         $tut4 = $res->num_rows;
                     }
-
-                    $tut_media = round((($tut1+$tut2+$tut3+$tut4)/4),0);
-
+;
                     $datos_tutorias = array(
                         array("label" => "Nada", "y" => $tut1),
                         array("label" => "Algo", "y" => $tut2),
                         array("label" => "Bastante", "y" => $tut3),
-                        array("label" => "Mucho", "y" => $tut4),
-                        array("label" => "Media = opción $tut_media", "y" => $tut_media)
+                        array("label" => "Mucho", "y" => $tut4)
                     );
                 };
                 break;
@@ -325,14 +300,11 @@
                         $tut4 = $res->num_rows;
                     }
 
-                    $difi_media = round((($difi1+$difi2+$difi3+$difi4)/4),0);
-
                     $datos_dificultad = array(
                         array("label" => "Baja", "y" => $difi1),
                         array("label" => "Media", "y" => $difi2),
                         array("label" => "Alta", "y" => $difi3),
-                        array("label" => "Muy alta", "y" => $difi4),
-                        array("label" => "Media = opción $difi_media", "y" => $difi_media)
+                        array("label" => "Muy alta", "y" => $difi4)
                     );
                 };
                 break;
@@ -364,8 +336,6 @@
                         $cali6 = $res->num_rows;
                     }
 
-                    $cali_media = round((($cali1+$cali2+$cali3+$cali4+$cali5+$cali6)/6),0);
-
                     $datos_calificaciones = array(
                         array("label" => "No presentado", "y" => $cali1),
                         array("label" => "Suspenso", "y" => $cali2),
@@ -373,7 +343,6 @@
                         array("label" => "Notable", "y" => $cali4),
                         array("label" => "Sobresaliente", "y" => $cali5),
                         array("label" => "Matrícula de Honor", "y" => $cali6),
-                        array("label" => "Media = opción $cali_media", "y" => $cali_media)
                     );
                 };
                 break;
@@ -393,13 +362,10 @@
                         $asis3 = $res->num_rows;
                     }
 
-                    $asis_media = round((($asis1+$asis2+$asis3)/3),0);
-
                     $datos_asistencias = array(
                         array("label" => "Menos del 50%", "y" => $asis1),
                         array("label" => "Entre 50% y 80%", "y" => $asis2),
-                        array("label" => "Más de 80%", "y" => $asis3),
-                        array("label" => "Media = opción $asis_media", "y" => $asis_media)
+                        array("label" => "Más de 80%", "y" => $asis3)
                     );
                 };
                 break;
@@ -433,7 +399,7 @@
                         $apartado1_6 = $res->num_rows;
                     }
 
-                    $apartado1_media = round((($apartado1_1+$apartado1_2+$apartado1_3+$apartado1_4+$apartado1_5+$apartado1_6)/6),0);
+                    $notamedia_ap1 = round((((($apartado1_2*1)+($apartado1_3*2)+($apartado1_4*3)+($apartado1_5*4)+($apartado1_6*5)))/($apartado1_2+$apartado1_3+$apartado1_4+$apartado1_5+$apartado1_6)),2);
 
                     $datos_apartado1 = array(
                         array("label" => "NS", "y" => $apartado1_1),
@@ -442,7 +408,7 @@
                         array("label" => "3", "y" => $apartado1_4),
                         array("label" => "4", "y" => $apartado1_5),
                         array("label" => "5", "y" => $apartado1_6),
-                        array("label" => "Media = opción $apartado1_media", "y" => $apartado1_media)
+                        array("label" => "Nota media = $notamedia_ap1", "y" => $notamedia_ap1)
                     );
                 };
                 break;
@@ -474,8 +440,17 @@
                         $apartado2_6 = $res->num_rows;
                     }
 
-                    $apartado2_media = round((($apartado2_1+$apartado2_2+$apartado2_3+$apartado2_4+$apartado2_5+$apartado2_6)/6),0);
-
+                    $notamedia_ap2 = round((((($apartado2_2*1)+($apartado2_3*2)+($apartado2_4*3)+($apartado2_5*4)+($apartado2_6*5)))/($apartado2_2+$apartado2_3+$apartado2_4+$apartado2_5+$apartado2_6)),2);
+/*
+                    $array = array($apartado2_2*1,$apartado2_3*2,$apartado2_4*3,$apartado2_5*4,$apartado2_6*5);
+                    $cuenta = count($array);
+                    $varianza = 0.0;
+                    $avg = array_sum($array)/($cuenta);
+                    foreach ($array as $i){
+                        $varianza = $varianza + pow(($i - $avg), 2);
+                    }
+                    $resultado = (float)sqrt($varianza/$cuenta);
+*/
                     $datos_apartado2 = array(
                         array("label" => "NS", "y" => $apartado2_1),
                         array("label" => "1", "y" => $apartado2_2),
@@ -483,7 +458,7 @@
                         array("label" => "3", "y" => $apartado2_4),
                         array("label" => "4", "y" => $apartado2_5),
                         array("label" => "5", "y" => $apartado2_6),
-                        array("label" => "Media = opción $apartado2_media", "y" => $apartado2_media)
+                        array("label" => "Nota media = $notamedia_ap2", "y" => $notamedia_ap2)
                     );
                 };
                 break;
@@ -515,7 +490,7 @@
                         $apartado21_6 = $res->num_rows;
                     }
 
-                    $apartado21_media = round((($apartado21_1+$apartado21_2+$apartado21_3+$apartado21_4+$apartado21_5+$apartado21_6)/6),0);
+                    $notamedia_ap21 = round((((($apartado21_2*1)+($apartado21_3*2)+($apartado21_4*3)+($apartado21_5*4)+($apartado21_6*5)))/($apartado21_2+$apartado21_3+$apartado21_4+$apartado21_5+$apartado21_6)),2);
 
                     $datos_apartado21 = array(
                         array("label" => "NS", "y" => $apartado21_1),
@@ -524,7 +499,7 @@
                         array("label" => "3", "y" => $apartado21_4),
                         array("label" => "4", "y" => $apartado21_5),
                         array("label" => "5", "y" => $apartado21_6),
-                        array("label" => "Media = opción $apartado21_media", "y" => $apartado21_media)
+                        array("label" => "Nota media = $notamedia_ap21", "y" => $notamedia_ap21)
                     );
                 };
                 break;
@@ -556,7 +531,7 @@
                         $apartado22_6 = $res->num_rows;
                     }
 
-                    $apartado22_media = round((($apartado22_1+$apartado22_2+$apartado22_3+$apartado22_4+$apartado22_5+$apartado22_6)/6),0);
+                    $notamedia_ap22 = round((((($apartado22_2*1)+($apartado22_3*2)+($apartado22_4*3)+($apartado22_5*4)+($apartado22_6*5)))/($apartado22_2+$apartado22_3+$apartado22_4+$apartado22_5+$apartado22_6)),2);
 
                     $datos_apartado22 = array(
                         array("label" => "NS", "y" => $apartado22_1),
@@ -565,7 +540,7 @@
                         array("label" => "3", "y" => $apartado22_4),
                         array("label" => "4", "y" => $apartado22_5),
                         array("label" => "5", "y" => $apartado22_6),
-                        array("label" => "Media = opción $apartado22_media", "y" => $apartado22_media)
+                        array("label" => "Nota media = $notamedia_ap22", "y" => $notamedia_ap22)
                     );
                 };
                 break;
@@ -597,7 +572,7 @@
                         $apartado23_6 = $res->num_rows;
                     }
 
-                    $apartado23_media = round((($apartado23_1+$apartado23_2+$apartado23_3+$apartado23_4+$apartado23_5+$apartado23_6)/6),0);
+                    $notamedia_ap23 = round((((($apartado23_2*1)+($apartado23_3*2)+($apartado23_4*3)+($apartado23_5*4)+($apartado23_6*5)))/($apartado23_2+$apartado23_3+$apartado23_4+$apartado23_5+$apartado23_6)),2);
 
                     $datos_apartado23 = array(
                         array("label" => "NS", "y" => $apartado23_1),
@@ -606,7 +581,7 @@
                         array("label" => "3", "y" => $apartado23_4),
                         array("label" => "4", "y" => $apartado23_5),
                         array("label" => "5", "y" => $apartado23_6),
-                        array("label" => "Media = opción $apartado23_media", "y" => $apartado23_media)
+                        array("label" => "Nota media = $notamedia_ap23", "y" => $notamedia_ap23)
                     );
                 };
                 break;
@@ -638,7 +613,7 @@
                         $apartado24_6 = $res->num_rows;
                     }
 
-                    $apartado24_media = round((($apartado24_1+$apartado24_2+$apartado24_3+$apartado24_4+$apartado24_5+$apartado24_6)/6),0);
+                    $notamedia_ap24 = round((((($apartado24_2*1)+($apartado24_3*2)+($apartado24_4*3)+($apartado24_5*4)+($apartado24_6*5)))/($apartado24_2+$apartado24_3+$apartado24_4+$apartado24_5+$apartado24_6)),2);
 
                     $datos_apartado24 = array(
                         array("label" => "NS", "y" => $apartado24_1),
@@ -647,7 +622,7 @@
                         array("label" => "3", "y" => $apartado24_4),
                         array("label" => "4", "y" => $apartado24_5),
                         array("label" => "5", "y" => $apartado24_6),
-                        array("label" => "Media = opción $apartado24_media", "y" => $apartado24_media)
+                        array("label" => "Nota media = $notamedia_ap24", "y" => $notamedia_ap24)
                     );
                 };
                 break;
@@ -679,7 +654,7 @@
                         $apartado25_6 = $res->num_rows;
                     }
 
-                    $apartado25_media = round((($apartado25_1+$apartado25_2+$apartado25_3+$apartado25_4+$apartado25_5+$apartado25_6)/6),0);
+                    $notamedia_ap25 = round((((($apartado25_2*1)+($apartado25_3*2)+($apartado25_4*3)+($apartado25_5*4)+($apartado25_6*5)))/($apartado25_2+$apartado25_3+$apartado25_4+$apartado25_5+$apartado25_6)),2);
 
                     $datos_apartado25 = array(
                         array("label" => "NS", "y" => $apartado25_1),
@@ -688,7 +663,7 @@
                         array("label" => "3", "y" => $apartado25_4),
                         array("label" => "4", "y" => $apartado25_5),
                         array("label" => "5", "y" => $apartado25_6),
-                        array("label" => "Media = opción $apartado25_media", "y" => $apartado25_media)
+                        array("label" => "Media = opción $notamedia_ap25", "y" => $notamedia_ap25)
                     );
                 };
                 break;
@@ -719,20 +694,23 @@
                         $apartado3_6 = $res->num_rows;
                     }
 
-                    $apartado3_media = round((($apartado3_1+$apartado3_2+$apartado3_3+$apartado3_4+$apartado3_5+$apartado3_6)/6),0);
+                    if (($apartado3_2+$apartado3_3+$apartado3_4+$apartado3_5+$apartado3_6) > 0) {
+                        $notamedia_ap3 = round((((($apartado3_2 * 1) + ($apartado3_3 * 2) + ($apartado3_4 * 3) + ($apartado3_5 * 4) + ($apartado3_6 * 5))) / ($apartado3_2 + $apartado3_3 + $apartado3_4 + $apartado3_5 + $apartado3_6)), 2);
+                    }else{
+                        $notamedia_ap3=0;
+                    }
 
-                    $datos_apartado3 = array(
-                        array("label" => "NS", "y" => $apartado3_1),
-                        array("label" => "1", "y" => $apartado3_2),
-                        array("label" => "2", "y" => $apartado3_3),
-                        array("label" => "3", "y" => $apartado3_4),
-                        array("label" => "4", "y" => $apartado3_5),
-                        array("label" => "5", "y" => $apartado3_6),
-                        array("label" => "Media = opción $apartado3_media", "y" => $apartado3_media)
-                    );
+                        $datos_apartado3 = array(
+                            array("label" => "NS", "y" => $apartado3_1),
+                            array("label" => "1", "y" => $apartado3_2),
+                            array("label" => "2", "y" => $apartado3_3),
+                            array("label" => "3", "y" => $apartado3_4),
+                            array("label" => "4", "y" => $apartado3_5),
+                            array("label" => "5", "y" => $apartado3_6),
+                            array("label" => "Nota media = $notamedia_ap3", "y" => $notamedia_ap3)
+                        );
                 };
                 break;
-        }
     }
 ?>
 <script>
@@ -745,19 +723,14 @@
                 text: "Encuesta de satisfacción"
             },
 
-            axisX:{
-                title: "Para la media, se muestra en la gráfica según que opción se recoja más veces"
-            },
-
             axisY: {
-                title: "Número de personas",
-                includeZero: false
+                title: "Número de personas"
             },
 
             data: [{
                 type: "column",
-                //yValueFormatString: "#,##0\",
                 indexLabel: "{y}",
+                indexLabelFontSize: 12,
                 indexLabelPlacement: "inside",
                 indexLabelFontColor: "white",
                 dataPoints:
@@ -849,7 +822,7 @@
     }
 </script>
 <body>
-<div id="chartContainer" style="height:350px; width: 100%; position: absolute;"></div>
+<div id="chartContainer" style="height:410px; width: 100%; position: absolute;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </HTML>
