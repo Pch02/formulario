@@ -399,7 +399,11 @@
                         $apartado1_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap1 = round((((($apartado1_2*1)+($apartado1_3*2)+($apartado1_4*3)+($apartado1_5*4)+($apartado1_6*5)))/($apartado1_2+$apartado1_3+$apartado1_4+$apartado1_5+$apartado1_6)),2);
+                    if(($apartado1_2+$apartado1_3+$apartado1_4+$apartado1_5+$apartado1_6) > 0) {
+                        $notamedia_ap1 = round((((($apartado1_2 * 1) + ($apartado1_3 * 2) + ($apartado1_4 * 3) + ($apartado1_5 * 4) + ($apartado1_6 * 5))) / ($apartado1_2 + $apartado1_3 + $apartado1_4 + $apartado1_5 + $apartado1_6)), 2);
+                    }else{
+                        $notamedia_ap1 = 0;
+                    }
 
                     $datos_apartado1 = array(
                         array("label" => "NS", "y" => $apartado1_1),
@@ -440,17 +444,12 @@
                         $apartado2_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap2 = round((((($apartado2_2*1)+($apartado2_3*2)+($apartado2_4*3)+($apartado2_5*4)+($apartado2_6*5)))/($apartado2_2+$apartado2_3+$apartado2_4+$apartado2_5+$apartado2_6)),2);
-/*
-                    $array = array($apartado2_2*1,$apartado2_3*2,$apartado2_4*3,$apartado2_5*4,$apartado2_6*5);
-                    $cuenta = count($array);
-                    $varianza = 0.0;
-                    $avg = array_sum($array)/($cuenta);
-                    foreach ($array as $i){
-                        $varianza = $varianza + pow(($i - $avg), 2);
+                    if(($apartado2_2+$apartado2_3+$apartado2_4+$apartado2_5+$apartado2_6) > 0) {
+                        $notamedia_ap2 = round((((($apartado2_2 * 1) + ($apartado2_3 * 2) + ($apartado2_4 * 3) + ($apartado2_5 * 4) + ($apartado2_6 * 5))) / ($apartado2_2 + $apartado2_3 + $apartado2_4 + $apartado2_5 + $apartado2_6)), 2);
+                    }else{
+                        $notamedia_ap2 = 0;
                     }
-                    $resultado = (float)sqrt($varianza/$cuenta);
-*/
+
                     $datos_apartado2 = array(
                         array("label" => "NS", "y" => $apartado2_1),
                         array("label" => "1", "y" => $apartado2_2),
@@ -490,7 +489,11 @@
                         $apartado21_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap21 = round((((($apartado21_2*1)+($apartado21_3*2)+($apartado21_4*3)+($apartado21_5*4)+($apartado21_6*5)))/($apartado21_2+$apartado21_3+$apartado21_4+$apartado21_5+$apartado21_6)),2);
+                    if (($apartado21_2+$apartado21_3+$apartado21_4+$apartado21_5+$apartado21_6) > 0) {
+                        $notamedia_ap21 = round((((($apartado21_2 * 1) + ($apartado21_3 * 2) + ($apartado21_4 * 3) + ($apartado21_5 * 4) + ($apartado21_6 * 5))) / ($apartado21_2 + $apartado21_3 + $apartado21_4 + $apartado21_5 + $apartado21_6)), 2);
+                    }else{
+                        $notamedia_ap21 = 0;
+                    }
 
                     $datos_apartado21 = array(
                         array("label" => "NS", "y" => $apartado21_1),
@@ -499,7 +502,8 @@
                         array("label" => "3", "y" => $apartado21_4),
                         array("label" => "4", "y" => $apartado21_5),
                         array("label" => "5", "y" => $apartado21_6),
-                        array("label" => "Nota media = $notamedia_ap21", "y" => $notamedia_ap21)
+                        array("label" => "Nota media = $notamedia_ap21", "y" => $notamedia_ap21),
+                        array("label" => "Desv.Tipica = $resultado", "y" => $resultado)
                     );
                 };
                 break;
@@ -531,7 +535,11 @@
                         $apartado22_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap22 = round((((($apartado22_2*1)+($apartado22_3*2)+($apartado22_4*3)+($apartado22_5*4)+($apartado22_6*5)))/($apartado22_2+$apartado22_3+$apartado22_4+$apartado22_5+$apartado22_6)),2);
+                    if (($apartado22_2+$apartado22_3+$apartado22_4+$apartado22_5+$apartado22_6) > 0) {
+                        $notamedia_ap22 = round((((($apartado22_2 * 1) + ($apartado22_3 * 2) + ($apartado22_4 * 3) + ($apartado22_5 * 4) + ($apartado22_6 * 5))) / ($apartado22_2 + $apartado22_3 + $apartado22_4 + $apartado22_5 + $apartado22_6)), 2);
+                    }else{
+                        $notamedia_ap22 = 0;
+                    }
 
                     $datos_apartado22 = array(
                         array("label" => "NS", "y" => $apartado22_1),
@@ -572,7 +580,11 @@
                         $apartado23_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap23 = round((((($apartado23_2*1)+($apartado23_3*2)+($apartado23_4*3)+($apartado23_5*4)+($apartado23_6*5)))/($apartado23_2+$apartado23_3+$apartado23_4+$apartado23_5+$apartado23_6)),2);
+                    if (($apartado23_2+$apartado23_3+$apartado23_4+$apartado23_5+$apartado23_6) > 0) {
+                        $notamedia_ap23 = round((((($apartado23_2 * 1) + ($apartado23_3 * 2) + ($apartado23_4 * 3) + ($apartado23_5 * 4) + ($apartado23_6 * 5))) / ($apartado23_2 + $apartado23_3 + $apartado23_4 + $apartado23_5 + $apartado23_6)), 2);
+                    }else{
+                        $notamedia_ap23 = 0;
+                    }
 
                     $datos_apartado23 = array(
                         array("label" => "NS", "y" => $apartado23_1),
@@ -613,7 +625,11 @@
                         $apartado24_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap24 = round((((($apartado24_2*1)+($apartado24_3*2)+($apartado24_4*3)+($apartado24_5*4)+($apartado24_6*5)))/($apartado24_2+$apartado24_3+$apartado24_4+$apartado24_5+$apartado24_6)),2);
+                    if (($apartado24_2+$apartado24_3+$apartado24_4+$apartado24_5+$apartado24_6) > 0) {
+                        $notamedia_ap24 = round((((($apartado24_2 * 1) + ($apartado24_3 * 2) + ($apartado24_4 * 3) + ($apartado24_5 * 4) + ($apartado24_6 * 5))) / ($apartado24_2 + $apartado24_3 + $apartado24_4 + $apartado24_5 + $apartado24_6)), 2);
+                    }else{
+                        $notamedia_ap24 = 0;
+                    }
 
                     $datos_apartado24 = array(
                         array("label" => "NS", "y" => $apartado24_1),
@@ -654,7 +670,11 @@
                         $apartado25_6 = $res->num_rows;
                     }
 
-                    $notamedia_ap25 = round((((($apartado25_2*1)+($apartado25_3*2)+($apartado25_4*3)+($apartado25_5*4)+($apartado25_6*5)))/($apartado25_2+$apartado25_3+$apartado25_4+$apartado25_5+$apartado25_6)),2);
+                    if (($apartado25_2+$apartado25_3+$apartado25_4+$apartado25_5+$apartado25_6) > 0) {
+                        $notamedia_ap25 = round((((($apartado25_2 * 1) + ($apartado25_3 * 2) + ($apartado25_4 * 3) + ($apartado25_5 * 4) + ($apartado25_6 * 5))) / ($apartado25_2 + $apartado25_3 + $apartado25_4 + $apartado25_5 + $apartado25_6)), 2);
+                    }else {
+                        $notamedia_ap25 = 0;
+                    }
 
                     $datos_apartado25 = array(
                         array("label" => "NS", "y" => $apartado25_1),
